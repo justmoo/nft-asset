@@ -1,15 +1,17 @@
-# Basic Sample Hardhat Project
+# NFT template
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+you can use this template to create an nft, this project has the following
 
-Try running some of the following tasks:
+- the nfts are uploaded as a json to pinata
+- the smart contract is deployed using hardhat deploy
+- the smart contract is verifiable using etherscan plugin
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+### how to run the project
+
+- clone the project
+- `cd` into the project
+- `npm i `
+- `npx hardhat compile`
+- `npx hardhat test`
+- `npx hardhat deploy --network [your network]`
+- `npx hardhat verify --network [your network] [your smart contract address]`
